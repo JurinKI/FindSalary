@@ -42,6 +42,7 @@ public class TotalSalary extends InputAndsend {
 
 	public double salary() {
 		double sum = 0;
+<<<<<<< HEAD
 		if(salary<=10000)
 		        {
 		            if(sales<=50000) {
@@ -59,6 +60,15 @@ public class TotalSalary extends InputAndsend {
 		                sum=12000;
 		            }
 		        }
+=======
+		if(salary<15000 && sales>100001){
+            sum = salary + 5000;
+        }
+        else if(sales<=50000) {
+            sum = salary+(sales*1.05);
+        }else
+            sum = salary+(sales*1.10);
+>>>>>>> Project_C
 		
 		return sum;
 	}
