@@ -45,11 +45,24 @@ public class TotalSalary extends InputAndsend {
 		if(salary<15000 && sales>100001){
             sum = salary + 5000;
         }
-        else if(sales<=50000) {
-            sum = salary+(sales*1.05);
-        }else
-            sum = salary+(sales*1.10);
-		
+        		
+		else if(salary<=10000)
+		        {
+		            if(sales<=50000) {
+		            sum = salary+(sales*1.05);
+		        }else
+		            sum = salary+(sales*1.10);
+		        }
+
+		        else {
+		            if(sales<=100000) {
+		                sum = salary+(sales*1.05);
+		            }else
+		                sum = salary+(sales*1.10);
+		            if(sum<12000) {
+		                sum=12000;
+		            }
+		        }
 		return sum;
 	}
 	
