@@ -53,8 +53,8 @@ public class TotalSalary  {
             sum = this.salary+(this.sales*0.05);
         }else
             sum = this.salary+(this.sales*0.10);
-		if(sum<12000) {
-				sum=12000;
+		if(sum<12000){
+			sum=12000;
 		}
 		return sum;
 	}
