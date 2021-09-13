@@ -1,5 +1,5 @@
 
-public class TotalSalary extends InputAndsend {
+public class TotalSalary  {
 	private String idmanager;
 	private String name;
 	private int salary;
@@ -14,7 +14,13 @@ public class TotalSalary extends InputAndsend {
         this.name = name;
 		this.salary = salary;
     }
-	
+	public  TotalSalary (String idmanager , String name,int salary,double sales ) {
+        this.idmanager = idmanager;
+        this.name = name;
+		this.salary = salary;
+		this.sales = sales;
+    }
+
 	
 	public String getidmanager() {
 		return this.idmanager;
@@ -42,24 +48,14 @@ public class TotalSalary extends InputAndsend {
 
 	public double salary() {
 		double sum = 0;
-		if(salary<=10000)
-		        {
-		            if(sales<=50000) {
-		            sum = salary+(sales*1.05);
-		        }else
-		            sum = salary+(sales*1.10);
-		        }
-
-		        else {
-		            if(sales<=100000) {
-		                sum = salary+(sales*1.05);
-		            }else
-		                sum = salary+(sales*1.10);
-		            if(sum<12000) {
-		                sum=12000;
-		            }
-		        }
 		
+        if(this.sales<=50000) {
+            sum = this.salary+(this.sales*0.05);
+        }else
+            sum = this.salary+(this.sales*0.10);
+		if(sum<12000) {
+				sum=12000;
+		}
 		return sum;
 	}
 	
