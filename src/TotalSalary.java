@@ -48,14 +48,11 @@ public class TotalSalary  {
 
 	public double salary() {
 		double sum = 0;
-<<<<<<< HEAD
-		
         if(this.sales<=50000) {
             sum = this.salary+(this.sales*0.05);
         }else
             sum = this.salary+(this.sales*0.10);
 		
-=======
 		if(salary<15000 && sales>100001){
             sum = salary + 5000;
         }
@@ -74,7 +71,6 @@ public class TotalSalary  {
 		            }else
 		                sum = salary+(sales*1.10);
 		        }
->>>>>>> c73518d170033b3cabda452475dd72c182b21a09
 		return sum;
 	}
 	
